@@ -60,7 +60,7 @@ hold.addEventListener('click',function(){
     if(playing){
     scores[activePlayer] += sum;
     document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
-    if(scores[activePlayer]>=10){
+    if(scores[activePlayer]>=100){
         playing = false;
         dice.style.visibility='hidden';
         document.querySelector(`.player--${activePlayer}`).classList.add('player--winner')
